@@ -6,6 +6,6 @@ import androidx.core.util.Pair;
 
 class MapyCzTileProvider extends AbstractMapsforgeOnlineTileProvider {
     MapyCzTileProvider() {
-        super("Mapy.cz", Uri.parse("https://mapy-cz.vrba.dev"), "/tile/{X}/{Y}/{Z}", 5, 18, new Pair<>("vrba.dev proxy", false));
+        super("Mapy.cz", Uri.parse("https://mapy-cz.vrba.dev"), "/tile/tourist/{X}/{Y}/{Z}", 5, 18, new Pair<>("vrba.dev proxy", false));
     }
 }
