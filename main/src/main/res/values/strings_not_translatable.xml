@@ -45,6 +45,7 @@
     <string translatable="false" name="map_source_osm_osmde">OpenStreetMap.de</string>
     <string translatable="false" name="map_source_osm_cyclosm">CyclOSM</string>
     <string translatable="false" name="map_source_osm_opentopomap">OpenTopoMap</string>
+    <string translatable="false" name="map_source_osm_mapy_cz">Mapy.cz</string>
 
     <!-- edit waypoint -->
     <string translatable="false" name="waypoint_latitude_null">N/S --° --.---</string>
@@ -62,6 +63,7 @@
     <string translatable="false" name="map_attribution_openstreetmapde_html"><![CDATA[© <a href="https://openstreetmap.de/">OpenStreetMap DE</a>, map data <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>]]></string>
     <string translatable="false" name="map_attribution_cyclosm_html"><![CDATA[© <a href="https://www.cyclosm.org/">CyclOSM</a>, map data <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>]]></string>
     <string translatable="false" name="map_attribution_opentopomap_html"><![CDATA[© <a href="https://www.opentopomap.org/">OpenTopoMap</a> (CC-BY-SA), map data <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, SRTM]]></string>
+    <string translatable="false" name="map_attribution_mapy_cz"><![CDATA[Mapy.cz (with nginx proxy)]]></string>
 
     <!-- links to manual pages -->
     <string translatable="false" name="manual_url_settings_offline_maps">https://manual.cgeo.org/en/offlinemaps</string>
