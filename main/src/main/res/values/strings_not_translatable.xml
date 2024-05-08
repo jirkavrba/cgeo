@@ -46,6 +46,7 @@
     <string translatable="false" name="map_source_osm_cyclosm">CyclOSM</string>
     <string translatable="false" name="map_source_osm_opentopomap">OpenTopoMap</string>
     <string translatable="false" name="map_source_osm_mapy_cz">Mapy.cz</string>
+    <string translatable="false" name="map_source_osm_mapy_cz_photo">Mapy.cz (letecká)</string>
 
     <!-- edit waypoint -->
     <string translatable="false" name="waypoint_latitude_null">N/S --° --.---</string>

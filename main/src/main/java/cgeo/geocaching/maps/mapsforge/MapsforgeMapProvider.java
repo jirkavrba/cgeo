@@ -62,7 +62,8 @@ public final class MapsforgeMapProvider extends AbstractMapProvider {
         registerMapSource(new OsmdeMapSource(this, resources.getString(R.string.map_source_osm_osmde)));
         registerMapSource(new CyclosmMapSource(this, resources.getString(R.string.map_source_osm_cyclosm)));
         registerMapSource(new OpenTopoMapSource(this, resources.getString(R.string.map_source_osm_opentopomap)));
-        registerMapSource(new MapyCzProxySource(this, resources.getString(R.string.map_source_osm_mapy_cz)));
+        registerMapSource(new MapyCzSource(this, resources.getString(R.string.map_source_osm_mapy_cz)));
+        registerMapSource(new MapyCzPhotoSource(this, resources.getString(R.string.map_source_osm_mapy_cz_photo)));
 
         //get notified if Offline Maps directory changes
         PersistableFolder.OFFLINE_MAPS.registerChangeListener(this, pf -> updateOfflineMaps());
@@ -217,14 +218,15 @@ public final class MapsforgeMapProvider extends AbstractMapProvider {
 
     }
 
-    public static final class MapyCzProxySource extends AbstractMapsforgeMapSource {
-        public MapyCzProxySource(final MapProvider mapProvider, final String name) {
-            super(mapProvider, name, TileSourceMapyCzProxy.INSTANCE);
+    public static final class MapyCzSource extends AbstractMapsforgeMapSource {
+        public MapyCzSource(final MapProvider mapProvider, final String name) {
+            super(mapProvider, name, TileSourceMapyCz.INSTANCE);
         }
+    }
 
-        @Override
-        public ImmutablePair<String, Boolean> calculateMapAttribution(final Context ctx) {
-            return new ImmutablePair<>(ctx.getString(R.string.map_attribution_openstreetmapde_html), false);
+    public static final class MapyCzPhotoSource extends AbstractMapsforgeMapSource {
+        public MapyCzPhotoSource(final MapProvider mapProvider, final String name) {
+            super(mapProvider, name, TileSourceMapyCzPhoto.INSTANCE);
         }
     }
 
